@@ -1,0 +1,40 @@
+{
+  "name": "js-lesson-32",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yaroslav0102030405/js-lesson-32.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yaroslav0102030405/js-lesson-32/issues"
+  },
+  "homepage": "https://github.com/Yaroslav0102030405/js-lesson-32#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "@parcel/runtime-js": {
+    "splitManifestThreshold": 10000
+  },
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.svg": [
+      "...",
+      "@parcel/transformer-svg-react"
+    ]
+  }
+}
